@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linkstar.app.guide.widget.GradationScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/scrollview"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/img_linkstar_blank"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_good_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginStart="14dp"
+                android:layout_gravity="center"
+                android:text="巴拉巴拉新生婴儿用品大全0-3个月初生宝宝衣服套装满月礼盒母婴"
+                style="@style/TextBlack14sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/color_bg_gray"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_favorite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_favorite"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_favorite"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏"
+                    style="@style/TextColor999_12sp"
+                    android:layout_marginTop="4dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="@dimen/space_14dp"
+            android:layout_marginTop="8dp"
+            android:text="六件套礼盒送礼自用皆宜"
+            style="@style/TextColor999_12sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_14dp"
+            android:layout_marginEnd="@dimen/space_14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥ 59"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/main_red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_money"
+                android:layout_marginStart="10dp"
+                android:layout_alignBottom="@+id/tv_money"
+                android:text="原价：￥120.00"
+                style="@style/TextColor999_12sp"
+                android:layout_marginBottom="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_alignBottom="@+id/tv_money"
+                android:text="销量：1350件"
+                style="@style/TextColor999_12sp"
+                android:layout_marginBottom="2dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/shadow_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_support"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_44dp"
+            android:layout_marginStart="@dimen/space_14dp"
+            android:layout_marginEnd="@dimen/space_14dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_postage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="部分地区包邮"
+                android:drawableStart="@drawable/icon_is_supported"
+                style="@style/TextColor999_12sp"
+                android:drawablePadding="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支持30天内无忧退换货"
+                android:drawableStart="@drawable/icon_is_supported"
+                style="@style/TextColor999_12sp"
+                android:drawablePadding="5dp"
+                android:layout_toEndOf="@+id/tv_postage"
+                android:layout_centerVertical="true"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/icon_order_arrow_right"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/shadow_gray"/>
+
+        <include layout="@layout/layout_good_detail_part_one"/>
+
+    </LinearLayout>
+
+</com.linkstar.app.guide.widget.GradationScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/space_14dp"
+    android:paddingEnd="@dimen/space_14dp"
+    android:paddingTop="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/personal_img"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/iv_head"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/rating_bar"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="荼蘼之恋伤"
+                style="@style/TextBlack14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-08-12      XXL码"
+                android:textSize="11sp"
+                android:textColor="@color/color_text_99"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mrb_progressTint="@color/main_red"
+            app:mrb_fillBackgroundStars="@color/gray"
+            style="@style/MyStarStyle"
+            android:rating="4.5"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="宝贝很棒，正品保证，苏宁快递真快，隔天就到了，买的金色的，很大气上档次，手机比实体店便宜好几百"
+        style="@style/TextBlack14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <com.linkstar.app.guide.widget.MessagePicturesLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_bg_gray"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

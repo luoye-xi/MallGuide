@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CustomerFragment"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的顾客"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_invite_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="邀请会员"
+            android:textColor="@color/title_color"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="12dp"
+            android:paddingStart="4dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_servicing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_tag1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_menu"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="54dp"
+            android:layout_alignTop="@+id/iv_tag1"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务中的顾客"
+                    style="@style/TextBlack14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_servicing_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0人"
+                    style="@style/TextWhite12sp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/rounded_bg_red_2dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前由您服务的顾客"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/ri_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_tag2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_menu"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="54dp"
+            android:layout_alignTop="@+id/iv_tag2"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已转移的顾客"
+                    style="@style/TextBlack14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_transfer_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0人"
+                    style="@style/TextWhite12sp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/rounded_bg_red_2dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已转移至其他导购或门店的顾客"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_customer_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顾客分组"
+            style="@style/TextBlack14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="54dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/tv_customer_characteristic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顾客特征分析"
+            style="@style/TextBlack14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="54dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/tv_vouchers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发放券"
+            style="@style/TextBlack14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="54dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

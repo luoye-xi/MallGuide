@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#f76f6f</color>
+
+    <color name="tab_indicator_color">#FF4081</color>
+    <color name="home_title_color">#666666</color>
+    <color name="font_color_gray">#d6d6d6</color>
+
+    <color name="title_color">#333333</color>
+
+    <color name="color_white">#ffffff</color>
+
+    <!--标题栏点击颜色-->
+
+    <!--背景灰-->
+    <!--<color name="color_bg_gray">#f0f0f0</color>-->
+    <color name="color_bg_gray">#f7f7f7</color>
+
+    <!--字体绿-->
+    <color name="color_text_green">#32cfe1</color>
+    <!--字体红-->
+    <color name="color_text_red">#d61920</color>
+    <!--字体灰-->
+    <color name="color_text_gray">#666666</color>
+
+    <color name="color_text_99">#999999</color>
+
+    <color name="cpb_default_color">#FF8E00</color>
+
+    <color name="order_not_select_color">#e5e5e5</color>
+
+    <color name="bg_pressed_color">#F4F9FF</color>
+
+    <color name="gray">#f0f0f0</color>
+
+    <!--环比图颜色1-->
+    <color name="circle_img_color_one">#7f8bed</color>
+    <!--环比图颜色2-->
+    <color name="circle_img_color_two">#57b6dc</color>
+    <!--环比图颜色3-->
+    <color name="circle_img_color_three">#4ebd9b</color>
+    <!--环比图颜色4-->
+    <color name="circle_img_color_four">#f7545b</color>
+
+    <color name="scan_corner_color">#0effc2</color>
+    <color name="black">#333333</color>
+    <color name="red">#d61920</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#32cfe1</color>
+    <color name="green">#7CCD7C</color>
+    <color name="yellow">#fffad2</color>
+    <color name="editcolor">#4d333333</color>
+
+    <color name="back_ground_gray">#F0F0F0</color>
+    <color name="light_blue">#A4E3EA</color>
+    <color name="main_color_blue">#32CFE1</color>
+    <color name="line_color">#E5E5E5</color>
+    <color name="orange">#FD9C17</color>
+
+    <color name="main_red">#f76f6f</color>
+
 </resources>

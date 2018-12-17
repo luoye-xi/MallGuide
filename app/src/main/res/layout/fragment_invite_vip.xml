@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.InviteVipFragment"
+    android:orientation="vertical"
+    android:background="@color/color_bg_gray"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_code"
+            android:layout_width="193dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="11dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫码领取会员"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_color"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顾客扫码领取会员后，下载APP"
+            style="@style/TextColor999_12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="21dp"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_small_shop"
+                />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直接下载APP"
+                android:layout_marginTop="5dp"
+                style="@style/TextColor666_12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顾客扫码关注公众号"
+                android:layout_marginTop="5dp"
+                style="@style/TextColor999_12sp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_small_shop"
+                />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信邀请"
+                android:layout_marginTop="5dp"
+                style="@style/TextColor666_12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看顾客关注及注册明细"
+                android:layout_marginTop="5dp"
+                style="@style/TextColor999_12sp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_small_shop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享链接邀请"
+                android:layout_marginTop="5dp"
+                style="@style/TextColor666_12sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+</LinearLayout>

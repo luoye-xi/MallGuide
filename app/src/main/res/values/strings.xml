@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Guide</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_work">工作台</string>
+    <string name="tab_message">消息</string>
+    <string name="tab_customer">顾客</string>
+
+    <string name="tab_all_goods">全部商品</string>
+    <string name="tab_shopper_dynamic">导购动态</string>
+    <string name="tab_goods_classify">商品分类</string>
+    <string name="tab_contact_shopper">联系导购</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SettingActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息提醒"
+            style="@style/TextBlack14sp"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启评论"
+                style="@style/TextBlack14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启评论后，顾客可评论导购说的动态"
+                android:textSize="12sp"
+                android:textColor="@color/color_text_99"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论黑名单"
+            style="@style/TextBlack14sp"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            style="@style/TextBlack14sp"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存数据"
+            style="@style/TextBlack14sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/iv_tag"
+            android:layout_marginEnd="13dp"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:text="5.20M"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_service_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服电话"
+            style="@style/TextBlack14sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/iv_tag2"
+            android:layout_marginEnd="13dp"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:text="4006183861"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            style="@style/TextBlack14sp"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

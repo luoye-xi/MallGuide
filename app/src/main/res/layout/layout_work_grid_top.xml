@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="21dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_my_shop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_small_shop"
+                />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的微店"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shoppers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_shoppers_said"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导购说"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_invite_vip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_invitation"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请会员"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_guide_information"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导购资讯"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp"
+        android:paddingBottom="18dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_my_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_commission"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的佣金"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_results"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_results"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的业绩"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_data_analysis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_data"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据分析"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="invisible"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icon_menu"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导购资讯"
+                android:gravity="center"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="9dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

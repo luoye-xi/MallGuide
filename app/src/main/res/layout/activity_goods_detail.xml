@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.GoodsDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <com.linkstar.app.guide.widget.SlideDetailsLayout
+            android:id="@+id/sv_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:default_panel="front"
+            app:duration="300"
+            app:percent="0.4">
+
+            <include layout="@layout/layout_goods_detail_top" />
+
+            <include layout="@layout/layout_goods_detail_bottom" />
+        </com.linkstar.app.guide.widget.SlideDetailsLayout>
+
+        <include layout="@layout/shadow_gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_link_kefu_black"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/space_1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg_gray"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_shop_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_link_kefu_black"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/space_1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="加入购物车"
+                android:gravity="center"
+                style="@style/TextBlack14sp"
+                android:background="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="立即购买"
+                android:gravity="center"
+                style="@style/TextWhite14sp"
+                android:background="@color/main_red"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.linkstar.app.guide.widget.LoadingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingTop="24dp"
+        android:background="#00000000"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_arrow_back_gray"
+            android:paddingStart="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_to_share"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv_share"
+            android:layout_toEndOf="@+id/iv_back"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#00000000"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

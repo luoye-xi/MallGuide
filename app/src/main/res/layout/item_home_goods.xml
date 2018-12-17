@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_14dp"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_linkstar_blank"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/tv_good_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="巴拉巴拉新生婴儿用品大全0-3个月初生宝宝衣服"
+        style="@style/TextBlack14sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_get_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赚11.34"
+            android:textColor="@color/main_red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/iv_share"
+            />
+
+        <TextView
+            android:id="@+id/tv_retail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_get_money"
+            android:textSize="11sp"
+            android:textColor="@color/color_text_99"
+            android:text="￥118.00"
+            android:layout_alignBottom="@+id/tv_get_money"
+            android:layout_marginStart="5dp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_share"
+            android:paddingTop="12dp"
+            android:paddingStart="15dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
