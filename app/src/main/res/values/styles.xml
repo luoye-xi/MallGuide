@@ -55,6 +55,11 @@
         <item name="android:textColor">@color/color_text_gray</item>
     </style>
 
+    <style name="TextColor999_14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_text_99</item>
+    </style>
+
     <style name="TextWhite12sp">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/white</item>

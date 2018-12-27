@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SMSInviteActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_bg_gray"
+    >
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:gravity="center_vertical"
+        android:text="发送短信帮顾客注册成为门店会员，顾客免注册直接下载APP"
+        style="@style/TextColor666_12sp"
+        />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号码"
+        style="@style/TextBlack14sp"
+        android:inputType="phone"
+        android:maxLength="11"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_read_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:layout_marginTop="11dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="从通讯录选择"
+            style="@style/TextBlack14sp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/space_14dp"
+        android:layout_marginEnd="@dimen/space_14dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="发送短信"
+        style="@style/TextWhite14sp"
+        android:background="@drawable/rounded_bg_red_5dp"
+        />
+
+</LinearLayout>

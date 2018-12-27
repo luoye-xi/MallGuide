@@ -39,10 +39,10 @@ public class MyShopActivity extends SwipeBackActivity {
         setContentView(R.layout.activity_my_shop);
         unbinder = ButterKnife.bind(this);
 
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_all_goods, R.drawable.icon_main_home, R.color.colorBottomNavigationActiveColored);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_shopper_dynamic, R.drawable.icon_main_control, R.color.colorBottomNavigationActiveColored);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_goods_classify, R.drawable.icon_main_message, R.color.colorBottomNavigationActiveColored);
-        AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.tab_contact_shopper, R.drawable.icon_main_customer, R.color.colorBottomNavigationActiveColored);
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_all_goods, R.drawable.icon_all_the_goods, R.color.colorBottomNavigationActiveColored);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_shopper_dynamic, R.drawable.icon_o0pens_the_dynamic, R.color.colorBottomNavigationActiveColored);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_goods_classify, R.drawable.icon_classification_of_goods, R.color.colorBottomNavigationActiveColored);
+        AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.tab_contact_shopper, R.drawable.icon_guide_to_contact, R.color.colorBottomNavigationActiveColored);
 
         bottomNavigationItems.add(item1);
         bottomNavigationItems.add(item2);

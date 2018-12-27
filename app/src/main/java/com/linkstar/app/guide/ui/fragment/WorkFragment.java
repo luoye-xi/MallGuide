@@ -9,8 +9,15 @@ import android.widget.TextView;
 
 import com.linkstar.app.guide.R;
 import com.linkstar.app.guide.base.BaseFragment;
+import com.linkstar.app.guide.ui.activity.CustomerOrderActivity;
+import com.linkstar.app.guide.ui.activity.DataAnalysisActivity;
+import com.linkstar.app.guide.ui.activity.GuideInformationActivity;
 import com.linkstar.app.guide.ui.activity.InviteVipActivity;
+import com.linkstar.app.guide.ui.activity.MyMoneyActivity;
+import com.linkstar.app.guide.ui.activity.MyResultsActivity;
 import com.linkstar.app.guide.ui.activity.MyShopActivity;
+import com.linkstar.app.guide.ui.activity.OpinionActivity;
+import com.linkstar.app.guide.ui.activity.QuestionActivity;
 import com.linkstar.app.guide.ui.activity.SettingActivity;
 import com.linkstar.app.guide.ui.activity.ShopperSayActivity;
 import com.linkstar.app.guide.util.StartActivityUtil;
@@ -57,20 +64,6 @@ public class WorkFragment extends BaseFragment {
 
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder = ButterKnife.bind(this, rootView);
-        return rootView;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
-    }
-
     @OnClick({R.id.iv_human, R.id.iv_scan, R.id.ll_my_shop, R.id.ll_shoppers, R.id.ll_invite_vip
             , R.id.ll_info, R.id.ll_my_money, R.id.ll_results, R.id.ll_data_analysis
             , R.id.ll_order, R.id.ll_bank_card, R.id.ll_question, R.id.ll_opinion, R.id.ll_setting})
@@ -94,27 +87,34 @@ public class WorkFragment extends BaseFragment {
                 break;
             case R.id.ll_info:
                 //导购资讯
+                StartActivityUtil.start(getActivity() , GuideInformationActivity.class);
                 break;
             case R.id.ll_my_money:
                 //我的佣金
+                StartActivityUtil.start(getActivity() , MyMoneyActivity.class);
                 break;
             case R.id.ll_results:
                 //我的业绩
+                StartActivityUtil.start(getActivity() , MyResultsActivity.class);
                 break;
             case R.id.ll_data_analysis:
                 //数据分析
+                StartActivityUtil.start(getActivity() , DataAnalysisActivity.class);
                 break;
             case R.id.ll_order:
                 //顾客订单
+                StartActivityUtil.start(getActivity() , CustomerOrderActivity.class);
                 break;
             case R.id.ll_bank_card:
                 //我的银行卡
                 break;
             case R.id.ll_question:
                 //常见问题
+                StartActivityUtil.start(getActivity() , QuestionActivity.class);
                 break;
             case R.id.ll_opinion:
                 //意见反馈
+                StartActivityUtil.start(getActivity() , OpinionActivity.class);
                 break;
             case R.id.ll_setting:
                 //系统设置

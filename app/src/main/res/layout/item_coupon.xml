@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_14dp"
+    android:layout_marginEnd="@dimen/space_14dp"
+    android:layout_marginBottom="13dp"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_bg_white_stroke_gray_5dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥100"
+            android:textColor="@color/main_red"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_how_much"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="满199可用"
+            style="@style/TextColor999_12sp"
+            android:layout_marginTop="3dp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/rounded_bg_white_stroke_gray_5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="24dp"
+            style="@style/TextBlack14sp"
+            android:text="品牌专享，全场满199可用"
+            android:layout_marginEnd="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            style="@style/TextColor999_12sp"
+            android:text="2018.08.31-2018.09.13"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="立即发放"
+            style="@style/TextWhite14sp"
+            android:background="@drawable/rounded_bg_red_2dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

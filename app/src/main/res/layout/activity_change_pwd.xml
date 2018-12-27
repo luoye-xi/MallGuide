@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ChangePwdActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_14dp"
+            android:text="我们会像你发送一条验证短信，输入验证码，可修改登录密码"
+            style="@style/TextColor999_12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册的手机号码：130****4534"
+            style="@style/TextBlack14sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="11dp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            style="@style/TextBlack14sp"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:layout_toStartOf="@+id/tv_get_code"
+            android:layout_marginEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="获取验证码"
+            android:background="@drawable/rounded_bg_red_2dp"
+            style="@style/TextWhite12sp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="9dp"
+            android:paddingEnd="9dp"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        style="@style/TextBlack14sp"
+        android:hint="请输入6-16位密码"
+        android:inputType="number"
+        android:maxLength="16"
+        />
+
+    <include layout="@layout/shadow_gray"/>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:layout_marginStart="@dimen/space_14dp"
+        android:layout_marginEnd="@dimen/space_14dp"
+        android:layout_marginTop="@dimen/space_14dp"
+        android:background="@drawable/rounded_bg_red_5dp"
+        style="@style/TextWhite14sp"
+        android:gravity="center"
+        android:text="提交"
+        />
+
+</LinearLayout>

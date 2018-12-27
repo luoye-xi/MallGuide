@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragment.BankFragment"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:gravity="center_vertical"
+        android:text="+添加新银行卡"
+        style="@style/TextBlack14sp"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

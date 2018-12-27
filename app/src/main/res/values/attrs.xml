@@ -13,5 +13,13 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="RongDivisionEditText">
+        <attr name="totalLength" format="integer" />
+        <attr name="sperator" format="string" />
+        <attr name="type">
+            <enum name="phone" value="1" />
+            <enum name="bank" value="2" />
+        </attr>
+    </declare-styleable>
 
 </resources>

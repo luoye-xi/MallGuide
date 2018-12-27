@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AddBankActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:gravity="center_vertical"
+        style="@style/TextColor999_12sp"
+        android:text="请填写您用于收款的银行卡信息"
+        />
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:text="所属银行"
+            />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="115dp"
+            style="@style/TextBlack14sp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bank_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:text="银行卡号"
+            />
+
+        <com.linkstar.app.guide.widget.RongDivisionEditText
+            android:id="@+id/et_bank_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:background="@color/white"
+            android:hint="输入银行卡卡号"
+            app:totalLength="19"
+            app:type="bank"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:text="开户人姓名"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:background="@color/white"
+            android:hint="请输入开户人姓名(限中文与字母)"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:inputType="text"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_place"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:text="开户行所在地区"
+            />
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:background="@color/white"
+            android:hint="点击选择所属区域"
+            android:layout_centerVertical="true"
+            style="@style/TextBlack14sp"
+            android:inputType="text"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        android:paddingTop="@dimen/space_14dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意："
+            style="@style/TextBlack14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextColor999_12sp"
+            android:text="1. 所填信息必须准确无误，否则佣金将无法到账"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextColor999_12sp"
+            android:text="2. 银行卡仅支持储蓄卡，请不要填写信用卡"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextColor999_12sp"
+            android:text="3. 绑定有银联标识的储蓄卡，到账更及时"
+            android:layout_marginTop="3dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:layout_marginStart="@dimen/space_14dp"
+        android:layout_marginEnd="@dimen/space_14dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="提交绑定"
+        style="@style/TextWhite14sp"
+        android:background="@drawable/rounded_bg_red_5dp"
+        />
+
+</LinearLayout>

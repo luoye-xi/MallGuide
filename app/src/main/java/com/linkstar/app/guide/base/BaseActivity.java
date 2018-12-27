@@ -26,7 +26,6 @@ public abstract class BaseActivity extends SwipeBackActivity implements BaseView
 
     private TextView mToolbarTitle;
     private TextView mToolbarSubTitle;
-    private Toolbar mToolbar;
 
     private Unbinder unbinder;
 
@@ -52,7 +51,7 @@ public abstract class BaseActivity extends SwipeBackActivity implements BaseView
                 .statusBarDarkFont(true, 0.2f)
                 .init();
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
        /*
         toolbar.setLogo(R.mipmap.ic_launcher_app);
         toolbar.setTitle("Title");

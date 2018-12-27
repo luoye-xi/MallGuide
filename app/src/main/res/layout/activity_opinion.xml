@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.OpinionActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:padding="@dimen/space_14dp"
+        android:hint="请留下您对小七顾问的宝贵意见，以便于我们进一步进行改进，谢谢！"
+        style="@style/TextBlack14sp"
+        android:gravity="top"
+        />
+
+</LinearLayout>

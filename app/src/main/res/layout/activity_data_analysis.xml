@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DataAnalysisActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_bg_gray"
+    >
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_tag1"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/icon_small_shop"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="54dp"
+            android:layout_alignTop="@+id/iv_tag1"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的微店数据"
+                style="@style/TextBlack14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近7天的订单总额￥0"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_14dp"
+        android:paddingBottom="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_week_visit"
+                style="@style/TextColor999_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="七日访问量：0" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:background="@color/order_not_select_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_week_order"
+                style="@style/TextColor999_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="七日订单量：0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_goods_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:paddingEnd="@dimen/space_14dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_tag2"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/icon_small_shop"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="54dp"
+            android:layout_alignTop="@+id/iv_tag2"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品分析"
+                style="@style/TextBlack14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="统计商品销量、浏览量、收藏量"
+                style="@style/TextColor666_12sp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

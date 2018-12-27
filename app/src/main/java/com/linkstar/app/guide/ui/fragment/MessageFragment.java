@@ -8,11 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.linkstar.app.guide.R;
+import com.linkstar.app.guide.base.BaseFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MessageFragment extends Fragment {
+public class MessageFragment extends BaseFragment {
 
 
     public MessageFragment() {
@@ -25,10 +26,17 @@ public class MessageFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_message, container, false);
+    protected void loadData() {
+
     }
 
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_message;
+    }
+
+    @Override
+    public void initView() {
+
+    }
 }

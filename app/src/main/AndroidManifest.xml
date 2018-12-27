@@ -5,6 +5,10 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- 允许程序读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:name=".app.MyApplication"
         android:allowBackup="true"
@@ -13,19 +17,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity android:name=".ui.activity.AboutUsActivity" />
+        <activity android:name=".ui.activity.MyShopActivity" />
+        <activity android:name=".ui.activity.GoodsDetailActivity" />
+        <activity android:name=".ui.activity.ShopperSayActivity" />
+        <activity android:name=".ui.activity.InviteVipActivity" />
+        <activity android:name=".ui.activity.GuideInformationActivity" />
+        <activity android:name=".ui.activity.MyMoneyActivity" />
+        <activity android:name=".ui.activity.MyResultsActivity" />
+        <activity android:name=".ui.activity.DataAnalysisActivity" />
+        <activity android:name=".ui.activity.CustomerOrderActivity" />
+        <activity android:name=".ui.activity.OpinionActivity" />
+        <activity android:name=".ui.activity.MessageSetActivity" />
+        <activity android:name=".ui.activity.BlackListActivity" />
+        <activity android:name=".ui.activity.ChangePwdActivity" />
+        <activity android:name=".ui.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.SettingActivity" />
-        <activity android:name=".ui.activity.AboutUsActivity" />
-        <activity android:name=".ui.activity.MyShopActivity" />
-        <activity android:name=".ui.activity.GoodsDetailActivity" />
-        <activity android:name=".ui.activity.ShopperSayActivity" />
-        <activity android:name=".ui.activity.InviteVipActivity"></activity>
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.ForgetPwdActivity" />
+        <activity android:name=".ui.activity.InServiceCustomerActivity" />
+        <activity android:name=".ui.activity.CouponActivity" />
+        <activity android:name=".ui.activity.CouponHistoryActivity" />
+        <activity android:name=".ui.activity.QuestionActivity" />
+        <activity android:name=".ui.activity.GoodsDataActivity" />
+        <activity android:name=".ui.activity.SMSInviteActivity" />
+        <activity android:name=".ui.activity.InviteHistoryActivity" />
+        <activity android:name=".ui.activity.AddBankActivity" />
+        <activity android:name=".ui.activity.WithdrawalRecordActivity" />
+        <activity android:name=".ui.activity.MyShopDataActivity" />
+        <activity android:name=".ui.activity.CustomerCharacteristicActivity"></activity>
     </application>
 
 </manifest>

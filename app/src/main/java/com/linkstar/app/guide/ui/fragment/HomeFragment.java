@@ -152,7 +152,6 @@ public class HomeFragment extends BaseFragment implements BaseQuickAdapter.Reque
         //列表item子view点击事件   在此即分享的点击事件
         ShareFragment fragment = new ShareFragment();
         fragment.show(getChildFragmentManager() , "1");
-
     }
 
     @Override

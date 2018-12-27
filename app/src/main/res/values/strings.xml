@@ -11,6 +11,8 @@
     <string name="tab_goods_classify">商品分类</string>
     <string name="tab_contact_shopper">联系导购</string>
 
+    <string name="click_back">再按一次退出程序</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

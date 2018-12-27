@@ -14,6 +14,8 @@ import android.widget.TextView;
 import com.linkstar.app.guide.R;
 import com.linkstar.app.guide.app.MyApplication;
 import com.linkstar.app.guide.base.BaseFragment;
+import com.linkstar.app.guide.ui.activity.SMSInviteActivity;
+import com.linkstar.app.guide.util.StartActivityUtil;
 import com.linkstar.app.guide.util.Utils;
 
 import butterknife.BindView;
@@ -44,6 +46,10 @@ public class InviteVipFragment extends BaseFragment {
     @BindView(R.id.tv_info2)
     TextView tvInfo2;
     Unbinder unbinder;
+    @BindView(R.id.tv_title)
+    TextView tvTitle;
+    @BindView(R.id.tv_des)
+    TextView tvDes;
 
     private int index;//fragment下标 0  下载APP  和 1 关注公众号
 
@@ -92,6 +98,8 @@ public class InviteVipFragment extends BaseFragment {
             tvInfo1.setVisibility(View.VISIBLE);
             tvInfo2.setVisibility(View.VISIBLE);
             llShare.setVisibility(View.GONE);
+            tvTitle.setText("扫码关注微信公众号");
+            tvDes.setVisibility(View.GONE);
         }
 
     }
@@ -105,7 +113,11 @@ public class InviteVipFragment extends BaseFragment {
                 break;
             case R.id.ll_sms:
                 //下标为0时为短信邀请 为1时关注明细
+                if(index == 0 ){
+                    StartActivityUtil.start(getActivity() , SMSInviteActivity.class);
+                }else {
 
+                }
                 break;
             case R.id.ll_share:
                 //下标为0时为分享链接邀请 为1时隐藏

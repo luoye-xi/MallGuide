@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MyMoneyActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_bg_gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:background="@color/white"
+        >
+
+        <include layout="@layout/layout_toolbar"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_invite_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_scan"
+            android:paddingStart="10dp"
+            android:paddingEnd="14dp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_invite_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_scan"
+            android:paddingStart="10dp"
+            android:paddingEnd="14dp"
+            android:layout_toStartOf="@+id/iv_invite_history"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/main_red"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_can_carry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提现佣金"
+            style="@style/TextWhite14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_14dp"
+        android:paddingBottom="@dimen/space_14dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_carried"
+                style="@style/TextBlack14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12" />
+
+            <TextView
+                style="@style/TextColor999_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="累计提现" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:background="@color/order_not_select_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_not_in"
+                style="@style/TextBlack14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12" />
+
+            <TextView
+                style="@style/TextColor999_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="待结算佣金" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/shadow_gray"/>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44dp"
+        android:layout_marginStart="@dimen/space_14dp"
+        android:layout_marginEnd="@dimen/space_14dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="申请提现"
+        style="@style/TextWhite14sp"
+        android:background="@drawable/rounded_bg_red_5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_14dp"
+        android:layout_marginTop="@dimen/space_14dp"
+        android:text="*订单佣金将在顾客订单完成后8天方可提现佣金"
+        style="@style/TextColor999_12sp"
+        />
+
+</LinearLayout>

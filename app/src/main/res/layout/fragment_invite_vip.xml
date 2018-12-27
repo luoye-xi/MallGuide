@@ -14,6 +14,7 @@
         android:orientation="vertical"
         android:background="@color/white"
         android:gravity="center"
+        android:paddingBottom="21dp"
         >
 
         <android.support.v7.widget.AppCompatImageView
@@ -24,6 +25,7 @@
             />
 
         <TextView
+            android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="扫码领取会员"
@@ -33,12 +35,12 @@
             />
 
         <TextView
+            android:id="@+id/tv_des"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="顾客扫码领取会员后，下载APP"
             style="@style/TextColor999_12sp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="21dp"
             />
 
     </LinearLayout>
