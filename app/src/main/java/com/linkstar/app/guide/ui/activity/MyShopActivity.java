@@ -14,6 +14,10 @@ import com.linkstar.app.guide.ui.adapter.ShopViewPagerAdapter;
 import com.linkstar.app.guide.ui.adapter.ViewPagerAdapter;
 import com.linkstar.app.guide.util.ActivityTransitionUtil;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -38,6 +42,8 @@ public class MyShopActivity extends SwipeBackActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_shop);
         unbinder = ButterKnife.bind(this);
+
+        EventBus.getDefault().register(this);
 
         AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_all_goods, R.drawable.icon_all_the_goods, R.color.colorBottomNavigationActiveColored);
         AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_shopper_dynamic, R.drawable.icon_o0pens_the_dynamic, R.color.colorBottomNavigationActiveColored);
@@ -101,6 +107,7 @@ public class MyShopActivity extends SwipeBackActivity {
         if (mImmersionBar != null)
             mImmersionBar.destroy();  //必须调用该方法，防止内存泄漏，不调用该方法，如果界面bar发生改变，在不关闭app的情况下，退出此界面再进入将记忆最后一次bar改变的状态
 
+        EventBus.getDefault().unregister(this);
     }
 
     @Override
@@ -108,4 +115,11 @@ public class MyShopActivity extends SwipeBackActivity {
         super.onBackPressed();
         ActivityTransitionUtil.finishActivityTransition(this);
     }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(Integer event) {
+        //处理逻辑
+        if(event == 1) onBackPressed();
+    }
+
 }

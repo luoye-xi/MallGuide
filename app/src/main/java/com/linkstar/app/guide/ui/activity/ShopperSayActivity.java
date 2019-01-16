@@ -23,6 +23,7 @@ import com.linkstar.app.guide.model.entity.HomeGoodsBean;
 import com.linkstar.app.guide.model.entity.ShopperSayBean;
 import com.linkstar.app.guide.ui.adapter.ShopperSayAdapter;
 import com.linkstar.app.guide.util.ActivityTransitionUtil;
+import com.linkstar.app.guide.util.GlideSimpleLoader;
 import com.linkstar.app.guide.widget.GradationScrollView;
 import com.linkstar.app.guide.widget.LoadingDialog;
 import com.linkstar.app.guide.widget.LoadingView;
@@ -144,6 +145,7 @@ public class ShopperSayActivity extends SwipeBackActivity implements GradationSc
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.iv_back:
+                onBackPressed();
                 break;
             case R.id.iv_share:
                 break;

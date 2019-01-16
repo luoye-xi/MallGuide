@@ -1,5 +1,6 @@
 package com.linkstar.app.guide.base;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.linkstar.app.guide.R;
+import com.linkstar.app.guide.app.MyApplication;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -21,6 +23,8 @@ public abstract class BaseFragment extends Fragment implements BaseView{
     private boolean isUIVisible;
 
     private Unbinder unbind;
+
+    public Context context;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +47,7 @@ public abstract class BaseFragment extends Fragment implements BaseView{
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(), container, false);
+        context = MyApplication.getContext();
         unbind = ButterKnife.bind(this, view);
         initView();
         return view;

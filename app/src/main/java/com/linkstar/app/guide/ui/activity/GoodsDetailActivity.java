@@ -27,6 +27,7 @@ import com.linkstar.app.guide.ui.adapter.EvaluateAdapter;
 import com.linkstar.app.guide.ui.adapter.GoodsInfoTabAdapter;
 import com.linkstar.app.guide.ui.adapter.MoreGoodsTabAdapter;
 import com.linkstar.app.guide.util.ActivityTransitionUtil;
+import com.linkstar.app.guide.util.GlideSimpleLoader;
 import com.linkstar.app.guide.widget.GradationScrollView;
 import com.linkstar.app.guide.widget.LoadingDialog;
 import com.linkstar.app.guide.widget.MessagePicturesLayout;

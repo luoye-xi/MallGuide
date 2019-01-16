@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ClassifyFragment"
+    android:background="@color/white"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/recycler_view"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_head"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:padding="@dimen/space_14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            >
+
+            <View
+                android:layout_width="38dp"
+                android:layout_height="1dp"
+                android:background="@color/color_bg_gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每周精选上新"
+                style="@style/TextBlack14sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+            <View
+                android:layout_width="38dp"
+                android:layout_height="1dp"
+                android:background="@color/color_bg_gray"
+                />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/brand_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

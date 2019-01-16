@@ -11,23 +11,25 @@ import com.linkstar.app.guide.ui.fragment.InviteVipFragment;
 
 import java.util.List;
 
-public class InviteVipTabAdapter extends FragmentPagerAdapter {
+public class TabAdapter extends FragmentPagerAdapter {
 
     private List<String> list;
+    private List<Fragment> fragmentList;
 
-    public InviteVipTabAdapter(FragmentManager fm, List<String> list) {
+    public TabAdapter(FragmentManager fm, List<String> list , List<Fragment> fragmentList) {
         super(fm);
         this.list = list;
+        this.fragmentList = fragmentList;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return InviteVipFragment.newInstance(position);
+        return fragmentList.get(position);
     }
 
     @NonNull
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public Object instantiateItem(@NonNull ViewGroup container, int position) {
         return (InviteVipFragment) super.instantiateItem(container, position);
     }
 

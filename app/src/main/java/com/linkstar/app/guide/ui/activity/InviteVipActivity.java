@@ -10,6 +10,7 @@ import com.linkstar.app.guide.base.BaseActivity;
 import com.linkstar.app.guide.ui.adapter.GoodsInfoTabAdapter;
 import com.linkstar.app.guide.ui.adapter.InviteVipTabAdapter;
 import com.linkstar.app.guide.ui.fragment.InviteVipFragment;
+import com.linkstar.app.guide.util.StartActivityUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,7 @@ public class InviteVipActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.iv_invite_history:
                 //邀请记录
+                StartActivityUtil.start(this , InviteHistoryActivity.class);
                 break;
             case R.id.iv_invite_explain:
                 //邀请说明

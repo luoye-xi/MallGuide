@@ -1,4 +1,4 @@
-package com.linkstar.app.guide.ui.activity;
+package com.linkstar.app.guide.util;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -11,7 +11,7 @@ import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.github.ielse.imagewatcher.ImageWatcher;
 
-class GlideSimpleLoader implements ImageWatcher.Loader {
+public class GlideSimpleLoader implements ImageWatcher.Loader {
     @Override
     public void load(Context context, Uri uri, final ImageWatcher.LoadCallback lc) {
         Glide.with(context).load(uri)
